@@ -1,0 +1,50 @@
+/* Regla universal para un modelo de cajas predecible */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+/* Contenedor principal configurado con Flexbox */
+.galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que las tarjetas se adapten si la pantalla es muy angosta */
+}
+
+/* Tarjetas individuales con ancho fluido */
+.tarjeta-foto {
+    width: 30%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Imágenes responsivas que nunca se desbordan */
+.tarjeta-foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Estilo para el texto debajo de cada imagen */
+.tarjeta-foto p {
+    text-align: center;
+    color: #555555;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+}

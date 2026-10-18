@@ -1,0 +1,28 @@
+/* Estilos generales opcionales para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Selector de clase para la tarjeta de presentación */
+.tarjeta-presentacion {
+    width: 350px;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    box-shadow: 5px 5px 10px #e0e0e0;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 8px; /* Opcional: suaviza las esquinas para un aspecto más moderno */
+}
+
+/* Estilos internos opcionales para mejorar la tipografía de la tarjeta */
+.tarjeta-presentacion h2 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.tarjeta-presentacion p {
+    color: #666666;
+    margin-bottom: 10px;
+}

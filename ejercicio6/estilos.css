@@ -1,0 +1,33 @@
+/* Selector de tipo: Aplica tipografía y tamaño a todos los párrafos */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Selector de ID: Centra el texto y da un color único al título principal */
+#titulo-principal {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* Selector de clase: Da color y negrita a los subtítulos */
+.subtitulo {
+    color: #1976d2;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Selector descendente: Quita el subrayado a los enlaces que están dentro de una lista */
+ul a {
+    text-decoration: none;
+    color: #0288d1;
+}
+
+/* Opcional: Estilo al pasar el cursor sobre los enlaces de la lista */
+ul a:hover {
+    text-decoration: underline;
+}

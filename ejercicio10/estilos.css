@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+/* 2. Estilos base (Mobile-First): Apilado vertical y tarjetas anchas */
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las tarjetas en pantallas móviles */
+    gap: 20px;
+}
+
+.tarjeta-foto {
+    width: 95%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.tarjeta-foto p {
+    text-align: center;
+    color: #555555;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/* 3. Media Query para tablets y escritorios (breakpoint a partir de 768px) */
+@media (min-width: 768px) {
+    .galeria {
+        /* 4. Cambiamos de nuevo a horizontal y permitimos el ajuste automático */
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta-foto {
+        /* Ajustamos el ancho para que quepan varias tarjetas por fila */
+        width: 31%;
+    }
+}
